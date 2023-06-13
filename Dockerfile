@@ -76,7 +76,7 @@ EXPOSE 2181 2888 3888 8080
 ENV PATH=$PATH:/$DISTRO_NAME/bin \
     ZOOCFGDIR=$ZOO_CONF_DIR
 
-COPY entrypoint.sh /entrypoint.sh
+COPY bin/entrypoint.sh /entrypoint.sh
 RUN chmod a+x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
